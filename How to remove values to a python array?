@@ -1,0 +1,21 @@
+How to remove values to a python array?
+
+Elements can be removed from the python array using pop() or remove() methods.
+
+pop(): This function will return the removed element .
+
+remove():It will not return the removed element.
+
+Consider the below example :
+
+x=arr.array('d', [8.1, 2.4, 6.8, 1.1, 7.7, 1.2, 3.6])
+print(x.pop())
+print(x.pop(3))
+x.remove(8.1)
+print(x)
+
+Output:
+
+3.6
+1.1  # element popped at 3 rd  index
+array('d', [ 2.4, 6.8, 7.7, 1.2])
