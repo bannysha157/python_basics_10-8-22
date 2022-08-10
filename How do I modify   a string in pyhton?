@@ -1,0 +1,7 @@
+s=list("hello zorld")
+s=['h','e','l','l','o',' ','z','o','r','l','d']
+s[6]='w'
+s=['h','e','l','l','o',' ','w','o','r','l','d']
+print("".join(s))
+o/p=
+hello world
