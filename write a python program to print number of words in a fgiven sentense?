@@ -1,0 +1,4 @@
+s="fell like freedom"
+print(len(s.split())
+
+o/p=3
