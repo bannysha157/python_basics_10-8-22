@@ -1,0 +1,55 @@
+13)str.isdecimal():  The isdecimal() method returns True if all characters in a string are decimal characters. If not, it returns False.
+
+The syntax of isdecimal() is:  string.isdecimal()
+
+isdecimal() Parameters:  The isdecimal() doesn't take any parameters.
+
+Return Value from isdecimal():   The isdecimal() returns:
+
+True if all characters in the string are decimal characters.
+False if at least one character is not decimal character.
+
+
+
+Example 1: Working of isdecimal():
+
+program:
+
+s = "28212"
+print(s.isdecimal())
+# contains alphabets
+s = "32ladk3"
+print(s.isdecimal())
+# contains alphabets and spaces
+s = "Mo3 nicaG el l22er"
+print(s.isdecimal())
+
+o/p=true
+false
+false
+
+
+
+NOTE:The superscript and subscripts are considered digit characters but not decimals. 
+If the string contains these characters (usually written using unicode), isdecimal() returns False.
+
+
+
+
+Example 2: String Containing digits and Numeric Characters:
+
+program:
+
+s = '23455'
+print(s.isdecimal())
+#s = '²3455'
+s = '\u00B23455'
+print(s.isdecimal())
+# s = '½'
+s = '\u00BD'
+print(s.isdecimal())
+
+Output:
+True
+False
+False
